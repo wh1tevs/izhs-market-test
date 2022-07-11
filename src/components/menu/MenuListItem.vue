@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue";
+import { computed } from "vue";
 
 export interface MenuItem {
   icon: string;
@@ -12,15 +12,17 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const Icon = defineAsyncComponent(
-  () => import(`../../assets/icons/menu/${props.item.icon}.svg`)
+const iconPath = computed(
+  () =>
+    new URL(`../../assets/icons/menu/${props.item.icon}.svg`, import.meta.url)
+      .href
 );
 </script>
 
 <template>
   <div class="menu-list-item">
     <div class="menu-list-item__wrapper">
-      <Icon />
+      <img :src="iconPath" />
       <span class="menu-list-item__title">{{ item.title }}</span>
     </div>
     <img
