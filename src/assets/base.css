@@ -1,0 +1,18 @@
+:root {
+  --font-variation-settings: "wdth" 151, "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96,
+    "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("@/assets/fonts/RobotoFlex.ttf");
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 750;
+  line-height: 120%;
+  font-variation-settings: var(--font-variation-settings)
+}
+
+body {
+  font-family: "Roboto Flex";
+}

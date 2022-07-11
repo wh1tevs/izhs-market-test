@@ -1,0 +1,24 @@
+# izhs-market-test
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Deploy to device
+```sh
+npx cap run
+```

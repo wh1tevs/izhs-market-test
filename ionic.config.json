@@ -1,0 +1,7 @@
+{
+    "name": "izhs-market-test",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "vue"
+}
